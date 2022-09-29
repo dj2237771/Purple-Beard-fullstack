@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: wheat;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: darkcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.container2 {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+fieldset {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+fieldset input,
+fieldset textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid darkcyan;
+  margin-top: 5px;
+}
+textarea {
+  resize: vertical;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__box {
+  width: 1.25em;
+  height: 2.25em;
+  border: 2px solid;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: darkcyan;
+  font-size: 20px;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: aquamarine;
+}

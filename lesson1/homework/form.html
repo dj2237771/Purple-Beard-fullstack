@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<main>
+
+  <body>
+    <section class="creat-form">
+      <h1>Send us a message</h1>
+
+      <form class="container" action="">
+        <fieldset class="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+        </fieldset>
+
+        <fieldset class="surname">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" placeholder="Surname" required>
+        </fieldset>
+
+        <fieldset class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" placeholder="Email" required>
+        </fieldset>
+        <fieldset class="message">
+          <label for="message">Message</label>
+          <textarea type="text" id="message" name="message" cols="30" rows="10" placeholder="message" required></textarea>
+        </fieldset>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+
+
+
+      <form class="container2" action="">
+        <fieldset class="checkbox">
+          <legend for="rating">What would you rate us?</legend><br>
+          <input type="checkbox" id="feedback1" name="feedback1" value="1">
+          <label for="feedback1"> 1</label>
+          <input type="checkbox" id="feedback2" name="feedback2" value="2">
+          <label for="feedback3"> 2</label>
+          <input type="checkbox" id="feedback3" name="feedback3" value="3">
+          <label for="feedback1"> 3</label>
+          <input type="checkbox" id="feedback4" name="feedback4" value="4">
+          <label for="feedback1"> 4</label>
+          <input type="checkbox" id="feedback1" name="feedback1" value="5">
+          <label for="feedback1"> 5</label>
+        </fieldset>
+
+        <fieldset class="four">
+          <legend for="contact type">How do you want us to contact you:</legend>
+          <select name="contact type" id="contact type">
+            <option value="email">Email</option>
+            <option value="mobile">Mobile</option>
+            <option value="post">Post</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="three">
+          <legend>Where did you find Us?</legend>
+          <button type="button">Instagram</button>
+          <button type="button">Facebook</button>
+          <button type="button">Google</button>
+        </fieldset><br /><br />
+        <button type="submit" value="Submit">Submit</button>
+
+      </form>
+
+    </section>
+
+  </body>
+  <footer>
+    <p>Copyright 2022</p>
+
+  </footer>
+
+</html>
+
+</main>
