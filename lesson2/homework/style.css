@@ -4,35 +4,53 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
 }
 .footer {
   justify-content: space-evenly;
   max-width: 1200px;
+  border: 1px solid black;
 }
 
 .purpleinfo {
-  justify-content: flex-start;
+  justify-content: center;
   min-width: 30%;
   order: 1;
+  border: 1px solid black;
+  width: 49%;
+}
+img {
+  object-fit: cover;
+  width: 5%;
 }
 .news {
   order: 0;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
+  border: 1px solid black;
 }
 .contactinfo {
   justify-content: flex-end;
   min-width: 30%;
   order: 3;
+  border: 1px solid black;
+  width: 49%;
 }
 #beardsearchbar {
   font-size: 100px;
+  border: 1px solid black;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8.119em;
 }
 .header {
   width: 100%;
   height: 30px;
   justify-content: flex-start;
+  border: 1px solid black;
 }
 .beardsearch {
   justify-content: end;
+  border: 1px solid black;
 }
