@@ -1,1 +1,42 @@
 /* Write your CSS here - remember to add Id's or classes to the HTML file */
+body {
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Verdana, sans-serif;
+  padding-left: auto;
+  padding-right: auto;
+}
+h1 {
+  background-image: url("img/Records.jpg");
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-size: 27;
+  text-align: center;
+}
+#h2-1 {
+  background-color: orange;
+}
+#h2-2 {
+  background-color: green;
+}
+#h2-3 {
+  background-color: purple;
+}
+img {
+  width: 500px;
+}
+a {
+  cursor: pointer;
+  transition: 0.3s;
+  color: darkred;
+  text-decoration: none;
+}
+a:hover {
+  color: aquamarine;
+}
+#copywrite {
+  text-align: center;
+}
