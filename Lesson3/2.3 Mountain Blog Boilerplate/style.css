@@ -1,0 +1,74 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  margin: 20px auto 50px;
+  width: 900px;
+  background-color: rgb(226, 236, 255);
+}
+main {
+  background-color: white;
+}
+
+#feature {
+  margin: auto;
+}
+
+.title {
+  background-color: rgba(199, 199, 199, 0.65);
+  padding: 20px;
+  position: absolute;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  bottom: 0;
+}
+.hero {
+  width: 900px;
+  position: relative;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 60px;
+}
+.title p {
+  padding: 0;
+  margin: 0;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
+article {
+  padding: 10px 110px 20px 110px;
+}
+article p {
+  font-size: 18px;
+}
+#article-figure {
+  float: right;
+  padding-left: 15px;
+  width: 300px;
+}
+#article-figure figcaption {
+  font-size: 14px;
+}
+.tags {
+  font-size: 12px;
+  margin: 20px 0 20px 0;
+}
+.tags span {
+  background-color: #438098;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
+footer {
+  border-top: solid 1px black;
+  margin: 10px auto;
+}
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
