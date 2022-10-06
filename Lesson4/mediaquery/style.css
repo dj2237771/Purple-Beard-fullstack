@@ -1,0 +1,51 @@
+html {
+  font-size: 16px;
+}
+
+.em {
+  font-size: 2em;
+  background-color: rgb(21, 255, 0);
+}
+.rem {
+  font-size: 2rem;
+  background-color: red;
+}
+
+body {
+  background-color: black;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  html {
+    font-size: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: rgb(255, 0, 8);
+  }
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: rgb(200, 255, 0);
+  }
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(0, 255, 47);
+  }
+  html {
+    font-size: 25px;
+  }
+}
