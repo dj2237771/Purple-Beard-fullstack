@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+  <main>
+    Main
+
+    <!-- Header -->
+    <header class="header">
+      Header
+      <p>After adding the lorem ipsum to all the elements, here’s what it will look like in the website:</p>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      Hero
+      <p>After you’ve created your HTML elements, it’s also a good idea to add some placeholder content. This will make the website look more similar to what it would like when you’re finished.
+
+        You don’t have to get too fancy– we’re just going to copy and paste some lorem ipsum filler text into each element. For example, here’s what’s in the Hero element:</p>
+    </section>
+    <div class="flex-container">
+      <!-- Content -->
+      <section class="content">
+        Content
+        <p>Looking good!
+
+          You’ll notice that I added different lengths of placeholder text to each element, to mirror what the final content would look like.
+
+          Optimizing the CSS for mobile
+          All right, we’re basically done with building the layout for mobile!
+
+          One more tip for making a website look good on mobile is to add a uniform padding around the sides (and the top and bottom, if you desire).
+
+          This just gives a tad bit of breathing room for the user. If there was zero padding and zero margin, then the content would be right up against the edge of the screen, which would feel cramped.
+
+          You don’t want to add too much space, in order to keep the content readable. In this case I have a global padding of 20px, but you can add a padding of 10px, 15px, or whatever you think looks best.
+
+          Let’s move on to adding styles for tablet view.
+
+          Creating a two-column layout for tablet
+          If we refer back to the tablet wireframe, we’ll see that it has the Content and Sidebar elements side by side. Everything else is stacked vertically just like on mobile.
+
+          We need to add some styles so the Content and Sidebar are formatted into two columns. We’ll be using flexbox for this, as opposed to CSS grid.</p>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        Sidebar
+        <p>Flexbox and CSS grid both have strengths and weaknesses, and can be very powerful when used together. Generally, flexbox is good at aligning elements in a single row or column, or multiple rows where you want everything spaced evenly. CSS grid is great at complex layouts involving both rows and columns, and if you want to make your content stick to a specific grid layout. There’s a great article on MDN that talks about when to use flexbox or CSS grid.</p>
+      </aside>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      Footer
+      <p>First of all, we are going to change our HTML and wrap the Content and Sidebar elements in a parent
+      <div> that we’ll give a class of “flex-container.” (Using ellipses to stand for additional markup that’s not really important right now)</p>
+    </footer>
+
+  </main>
+</body>
+
+</html>
