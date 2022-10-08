@@ -12,6 +12,26 @@ main.header {
 img {
   width: 100%;
 }
+.section-title {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: "Rancho", cursive;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.section-title span {
+  display: block;
+  color: orange;
+  margin-top: 0.5rem;
+}
+.btn {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
 /* header style start  */
 header nav ul li {
   display: none;
@@ -28,13 +48,95 @@ header nav ul li {
   font-size: 1.6rem;
 }
 /* header style end */
-
-/* header style start  */
-
-/* header style end */
-/* header style start  */
-
-/* header style end */
+/* hero style start  */
+.hero-info h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  color: rgb(50, 50, 50);
+  margin: 3rem 0;
+}
+.lover {
+  color: #2a9dbf;
+}
+#hero-button {
+  display: flex;
+  justify-content: space-around;
+}
+#hero-button :first-child {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 5px 5px 15 orange;
+  border-radius: 5px;
+  border: none;
+  margin: 5%;
+  cursor: pointer;
+}
+#hero-button :last-child {
+  background-color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  margin: 5%;
+  cursor: pointer;
+}
+#hero-icon {
+  padding: 1rem;
+}
+.hero-info img {
+  margin: 3rem 0;
+}
+/* hero style end */
+/* speciality style start  */
+.specialty-category {
+  color: orange;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+.specialty-category::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.specialty-discription {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.specialty-title {
+  font-size: 2.6rem;
+  display: block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.specialty-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  font-weight: bold;
+}
+.specialty-img {
+  box-shadow: 5px 5px 15 rgb (200, 200, 200, 0.8);
+}
+/* speciality style end */
 /* header style start  */
 
 /* header style end */
@@ -59,5 +161,47 @@ header nav ul li {
   }
   #bur-menu {
     display: none;
+  }
+  .hero {
+    display: flex;
+    padding: 1rem;
+  }
+  .hero-info {
+    padding: 1rem;
+  }
+  .hero-info-bloc {
+    display: block;
+  }
+  #hero-button {
+    justify-content: flex-start;
+  }
+  #hero-image {
+    width: 45%;
+  }
+  .specialties {
+    padding: 2rem;
+    background-color: #efefef;
+  }
+  .specialty-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  .specialty-img {
+    width: 45%;
+  }
+  .price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price span {
+    margin-bottom: 1rem;
+  }
+  .specialty-item:last-child .specialty-img {
+    order: 1;
+  }
+  .specialty-item:last-child .specialty-info {
+    order: 2;
   }
 }
