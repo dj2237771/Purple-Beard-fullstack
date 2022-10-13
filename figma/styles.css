@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* header start */
+.header {
+  background-color: rgb(41, 24, 46);
+  margin: 0;
+  color: #f6f7f1;
+  height: 100vh;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+#title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f14c36;
+  padding-top: 2rem;
+}
+.header-info {
+  padding-top: 12em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.header-sub-title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.header p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  padding-top: 2rem;
+}
+#img-man {
+  display: none;
+}
+.header button {
+  background: rgb(241 76 54);
+  width: 250px;
+  height: 60px;
+  border: none;
+  color: #f6f7f1;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-top: 3rem;
+}
+#btn0 {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    max-width: 1336px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50%;
+  }
+  .header {
+    text-align: left;
+    max-width: 1336px;
+    max-height: 768px;
+  }
+  #title {
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
+
+  .header-info {
+    padding-left: 3rem;
+    width: 70%;
+  }
+  .header-info h2,
+  p {
+    width: 100%;
+  }
+  .img {
+    width: 40%;
+  }
+  .header-sub-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.2;
+  }
+  .header p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    width: 650px;
+  }
+
+  #img-man {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right: 10rem;
+    padding-top: 5rem;
+  }
+  .header-info-box {
+    display: flex;
+  }
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 20%;
+  }
+  .btn {
+    display: none;
+  }
+  #btn0 {
+    display: block;
+    margin-right: 3rem;
+  }
+  .header-info-box {
+    height: 80%;
+  }
+}
+/* header end  */
