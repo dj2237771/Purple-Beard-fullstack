@@ -8,56 +8,55 @@ body {
 }
 
 /* header start */
-.header {
+header {
   background-color: rgb(41, 24, 46);
   margin: 0;
   color: #f6f7f1;
-  height: 100vh;
+  height: 100%;
+  min-height: 852px;
+  min-width: 393px;
   text-align: center;
   letter-spacing: 0.2em;
 }
 
-#title {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 500;
+.title {
+  font-weight: bold;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #f14c36;
   padding-top: 2rem;
 }
 .header-info {
-  padding-top: 12em;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 200px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .header-sub-title {
   font-family: "Lexend Deca";
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
-.header p {
+header p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16.5px;
   line-height: 25px;
   padding-top: 2rem;
 }
 #img-man {
   display: none;
 }
-.header button {
+header button {
   background: rgb(241 76 54);
   width: 250px;
   height: 60px;
   border: none;
   color: #f6f7f1;
-  font-family: "Lexend Deca";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -66,10 +65,139 @@ body {
   font-weight: bold;
   letter-spacing: 0.2em;
   margin-top: 3rem;
+  margin-bottom: 226px;
 }
 #btn0 {
   display: none;
 }
+/* header end  */
+
+/* focus start  */
+.focus {
+  height: 100%;
+  min-height: 852px;
+  min-width: 393px;
+  background-color: #f6f7f1;
+}
+#phone {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 44px 50px 0 50px;
+}
+.focus-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.focus-title :first-child {
+  color: #f14c36;
+}
+.focus-title :last-child {
+  color: #436b2c;
+}
+.focus-info {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 35px 50px 25px;
+}
+/* focus end  */
+/* hello start */
+.hello {
+  height: 100%;
+  min-height: 852px;
+  min-width: 393px;
+  background-color: #f6f7f1;
+  text-align: center;
+}
+.hello-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  max-width: 343px;
+  max-height: 60px;
+  margin: auto;
+  padding: 44px 25px;
+}
+.hello i {
+  font-size: 25px;
+  padding-bottom: 1rem;
+}
+.hello h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+}
+.hello p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 243px;
+  margin: auto;
+  padding-top: 1rem;
+}
+.hello article {
+  padding-top: 54px;
+}
+.unity {
+  color: #f14c36;
+}
+.privacy {
+  color: #436b2c;
+}
+.clarity {
+  color: #ecb20d;
+}
+/* hello end */
+/* footer end */
+footer {
+  height: 100%;
+  min-height: 450px;
+  min-width: 393px;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: rgb(41, 24, 46);
+}
+.footer-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #f14c36;
+  padding-top: 2rem;
+}
+.links {
+  color: #ecb20d;
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+li {
+  padding-top: 5px;
+}
+footer p {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #f6f7f1;
+}
+/* footer end */
 
 @media screen and (min-width: 720px) {
   body {
@@ -78,18 +206,20 @@ body {
     border: none;
     border-radius: 50%;
   }
-  .header {
+  header {
     text-align: left;
     max-width: 1336px;
     max-height: 768px;
+    height: 100vh;
   }
-  #title {
+  #title1 {
     padding-left: 3rem;
     padding-top: 3rem;
   }
 
   .header-info {
     padding-left: 3rem;
+    padding-right: 0;
     width: 70%;
   }
   .header-info h2,
@@ -103,9 +233,9 @@ body {
     font-weight: 500;
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.99;
   }
-  .header p {
+  header p {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
@@ -138,5 +268,94 @@ body {
   .header-info-box {
     height: 80%;
   }
+
+  .focus {
+    max-width: 1336px;
+    max-height: 768px;
+    height: 100vh;
+    display: flex;
+  }
+  #phone {
+    padding-top: 44px;
+    padding-bottom: 28px;
+    padding-left: 120px;
+  }
+  .focus article {
+    align-self: center;
+  }
+  .focus-title {
+    text-align: end;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 500px;
+    max-height: 100px;
+    margin-left: auto;
+  }
+  .focus-info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    max-width: 650px;
+    max-height: 50px;
+    margin-left: auto;
+    text-align: end;
+    padding-right: 0;
+  }
+  .hello {
+    max-width: 1336px;
+    max-height: 768px;
+    height: 100vh;
+  }
+  .hello-box {
+    display: flex;
+    align-content: space-between;
+  }
+  .hello-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.15em;
+    max-width: 100%;
+    padding-top: 200px;
+    padding-bottom: 105px;
+  }
+  .hello i {
+    font-size: 32px;
+  }
+  .hello h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 2rem;
+  }
+  .hello p {
+    width: 250px;
+    height: 125px;
+  }
+  .hello article {
+    margin: auto;
+  }
+  footer {
+    max-width: 1336px;
+    height: 100%;
+    min-height: 296px;
+    padding-top: 38px;
+  }
+  .footer-title {
+    border-top: 66px;
+  }
+  .links {
+    display: flex;
+  }
+  li {
+    margin: auto;
+  }
+  footer p {
+    margin: auto;
+    padding-top: 75px;
+  }
 }
-/* header end  */
