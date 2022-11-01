@@ -11,13 +11,12 @@ let nameLabel = document.getElementsByTagName("label");
 let username = document.getElementById("userName");
 let password = document.getElementById("password");
 let loginButton = document.getElementById("loginSubmit");
+let loginBox = document.getElementById("loginBox");
 
 const reader = new FileReader();
 
 let loadedImage = "";
 addProduct.addEventListener("click", function () {
-  console.log(fromBox.length);
-  console.log(fromBox.elements[4].value);
   let i;
   for (i = 0; i < fromBox.length; i++) {
     if (nameLabel[i].textContent == "Product Image:") {
@@ -29,7 +28,7 @@ addProduct.addEventListener("click", function () {
     } else {
       let para = document.createElement("p");
       data = fromBox.elements[i].value;
-      console.log(data);
+      // console.log(data);
       para.innerText = nameLabel[i].textContent + fromBox.elements[i].value;
       saleProducts.appendChild(para);
     }
@@ -51,10 +50,20 @@ function imageElement(imgSrc) {
 }
 
 // login verification
-loginButton.addEventListener("submit", handleForm, function () {
-  handleForm();
-  if (userName.nodeValue == "admin" || password.nodeValue == "password") {
-    console.log(userName.nodeValue);
+
+loginBox.addEventListener("submit", loginForm);
+
+function loginForm(event) {
+  event.preventDefault();
+  console.log(loginBox.elements[0].value);
+  console.log("its working");
+  if (
+    loginBox.elements[0].value == "admin" &&
+    loginBox.elements[1].value == "password"
+  ) {
     fromBox.style.display = "block";
+    loginBox.style.display = "none";
+  } else {
+    alert("password or username is incorrect");
   }
-});
+}
