@@ -49,8 +49,9 @@
 
       </div>
       <div class="loginFieldset">
-        <input type="password" class="formInput" autofocus placeholder="Password">
+        <input type="password" id="signupPassword" class="formInput" autofocus placeholder="Password">
         <div class="formInput-error-message"></div>
+        <progress max="8" value="0" id="passwordStrenght" style="width: 70%"></progress>
 
       </div>
       <div class="loginFieldset">
@@ -106,11 +107,16 @@
       <input type="number" id="price" name="price"><br>
       <div class="formInput-error-message"></div>
 
+
     </fieldset>
     <input type="submit" id="submitButt" value="Submit">
   </form>
 
   <div id="saleProducts">
+    <div>
+      <h2 id="allProPrice"></h2>
+      <h2 id="numberOfPro"></h2>
+    </div>
   </div>
 </body>
 
