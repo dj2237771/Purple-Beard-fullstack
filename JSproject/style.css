@@ -1,6 +1,124 @@
 body {
-  margin: 100 auto;
+  margin: auto;
   max-width: 1500px;
   padding: auto;
   font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkcyan;
+  height: 100%;
+}
+section {
+  height: 100%;
+  width: 100%;
+  background-color: darkcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.loginFieldset {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.loginFieldset input,
+.loginFieldset textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid darkcyan;
+  margin-top: 5px;
+}
+
+fieldset {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border: none;
+}
+fieldset input,
+fieldset textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid darkcyan;
+  margin-top: 5px;
+}
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: darkcyan;
+  font-size: 20px;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input:hover {
+  background-color: aquamarine;
+}
+.formHidden {
+  display: none;
+}
+.formTitle {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.formErrorMessage {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+.formInput-rror {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+.formInput-rror-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.formLink {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formLink:hover {
+  text-decoration: underline;
 }

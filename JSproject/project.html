@@ -9,38 +9,107 @@
 </head>
 
 <body>
+  <div>
+    <form class="form" id="loginBox">
+      <h1 class="formTitle">Login</h1>
+      <div class="formMessage error"></div>
+      <div class="loginFieldset">
+        <label for="name">Username:</label><br>
+        <input class="formInput" type="text" id="userName" name="username"><br>
+        <div class="formInput-error-message"></div>
 
-  <form style="display: none;">
-    <!-- <form> -->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="name">Seller:</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="product">Product:</label><br>
-    <input type="text" id="product" name="product"><br>
-    <label for="image">Product Image:</label><br>
-    <img src="" height="200" alt="Image preview" />
-    <!-- <input type="url" id="image" name="avatar" accept="url"><br> -->
-    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br>
-    <label for="productDis">Product discription:</label><br>
-    <textarea rows="4" cols="50" type="text" id="productDis" name="productDis" style="width: 170px; height: 78px;"></textarea><br>
-    <label for="price">Price:</label><br>
-    <input type="number" id="price" name="price"><br>
+      </div>
+
+      <div class="loginFieldset">
+        <label for="password">Password:</label><br>
+        <input class="formInput" type="password" id="password" name="password"><br>
+        <div class="formInput-error-message"></div>
+
+
+      </div>
+
+
+      <input type="submit" id="loginSubmit" value="Submit">
+      <p class="form__text">
+        <a class="formLink" href="./" id="creatAcount">Create account</a>
+      </p>
+    </form>
+
+    <form class="formHidden" id="createAccount">
+      <h1 class="formTitle">Create Account</h1>
+      <div class="formMessage error"></div>
+      <div class="loginFieldset">
+        <input type="text" id="signupUsername" class="formInput" autofocus placeholder="Username">
+        <div class="formInput-error-message"></div>
+
+      </div>
+      <div class="loginFieldset">
+        <input type="text" class="formInput" autofocus placeholder="Email Address">
+        <div class="formInput-error-message"></div>
+
+      </div>
+      <div class="loginFieldset">
+        <input type="password" class="formInput" autofocus placeholder="Password">
+        <div class="formInput-error-message"></div>
+
+      </div>
+      <div class="loginFieldset">
+        <input type="password" class="formInput" autofocus placeholder="Confirm password">
+        <div class="formInput-error-message"></div>
+
+      </div>
+      <input type="submit" id="createAccountSubmit" value="Submit" name="Continue">
+      <p class="form__text">
+        <a class="formLink" href="./" id="linkLogin">Already have an account? Sign in</a>
+      </p>
+    </form>
+  </div>
+
+  <form class="formHidden" id="creatProduct">
+    <h1 class="formTitle">Create Product listing</h1>
+    <div class="formMessage error"></div>
+    <fieldset>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <div class="formInput-error-message"></div>
+
+    </fieldset>
+    <fieldset>
+      <label for="name">Seller:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <div class="formInput-error-message"></div>
+
+    </fieldset>
+    <fieldset>
+      <label for="product">Product:</label><br>
+      <input type="text" id="product" name="product"><br>
+      <div class="formInput-error-message"></div>
+
+    </fieldset>
+    <fieldset>
+      <label for="image">Product Image:</label><br>
+      <img src="" height="200" alt="Image preview" />
+      <!-- <input type="url" id="image" name="avatar" accept="url"><br> -->
+      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br>
+      <div class="formInput-error-message"></div>
+
+    </fieldset>
+    <fieldset>
+      <label for="productDis">Product discription:</label><br>
+      <textarea rows="4" cols="50" type="text" id="productDis" name="productDis" style="width: 170px; height: 78px;"></textarea><br>
+      <div class="formInput-error-message"></div>
+
+
+    </fieldset>
+    <fieldset>
+      <label for="price">Price:</label><br>
+      <input type="number" id="price" name="price"><br>
+      <div class="formInput-error-message"></div>
+
+    </fieldset>
     <input type="submit" id="submitButt" value="Submit">
   </form>
-  <form id="loginBox">
-    <h1>
-      login
-    </h1>
-    <label for="name">Username:</label><br>
-    <input type="text" id="userName" name="username"><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br>
-    <input type="submit" id="loginSubmit" value="Submit">
 
-
-
-  </form>
   <div id="saleProducts">
   </div>
 </body>
