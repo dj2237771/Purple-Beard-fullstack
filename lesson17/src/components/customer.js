@@ -1,5 +1,5 @@
 const customer = {
-  first_name: "John",
+  first_name: "Daniel",
   last_name: "Smith",
 };
 
